@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImpulseShield — Block Impulse Purchases</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="logo-icon">&#128737;</span>
+        <span class="logo-text">ImpulseShield</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Block online checkout for 72 hours before you buy.</h1>
+        <p class="subheadline">Protect Future You from emotional purchases.</p>
+
+        <ul class="features">
+          <li>
+            <span class="check">&#10003;</span>
+            Blocks checkout on sites you choose
+          </li>
+          <li>
+            <span class="check">&#10003;</span>
+            Saves items in a Cooling Vault instead of letting you buy instantly
+          </li>
+          <li>
+            <span class="check">&#10003;</span>
+            Forces a 24&ndash;72 hour waiting period before purchase
+          </li>
+        </ul>
+      </section>
+
+      <section class="signup">
+        <h2>Join the Beta</h2>
+        <p class="signup-sub">Be the first to try ImpulseShield when it launches.</p>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
+        <form action="https://formspree.io/f/mzdaglpk" method="POST">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            >
+          </div>
+          <div class="form-group">
+            <label for="sites">Which sites would you want to block? <span class="optional">(optional)</span></label>
+            <input
+              type="text"
+              id="sites"
+              name="sites"
+              placeholder="e.g. Amazon, Target, Walmart"
+            >
+          </div>
+          <button type="submit">Join the Beta</button>
+        </form>
+      </section>
+
+      <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Choose your sites</h3>
+            <p>Pick which shopping sites to protect yourself from.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Shop normally</h3>
+            <p>Browse as usual. ImpulseShield stays out of the way until checkout.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Checkout blocked</h3>
+            <p>When you hit checkout, the item goes to your Cooling Vault instead.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Wait &amp; decide</h3>
+            <p>After the waiting period, decide with a clear head. Most items you won't even want anymore.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Questions? <a href="mailto:impulseshield@gmail.com">impulseshield@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
