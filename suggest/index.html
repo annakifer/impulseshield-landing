@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestions &amp; Feedback — ImpulseShield</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="suggest.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="/" class="logo-link">
+          <img class="logo-img" src="../logo-with-name.svg" alt="ImpulseShield">
+        </a>
+      </div>
+    </header>
+    <div class="header-divider"></div>
+
+    <main>
+      <section class="suggest-hero">
+        <h2 class="suggest-title">Suggestions &amp; Feedback</h2>
+        <p class="suggest-sub">Help us make ImpulseShield better. Suggest a site to add, report a bug, or share an idea.</p>
+      </section>
+
+      <section class="signup">
+        <h2>What's on your mind?</h2>
+        <p class="signup-sub">We read every submission.</p>
+
+        <form action="https://formspree.io/f/mykddyqd" method="POST">
+          <input type="hidden" name="_subject" value="ImpulseShield Suggestion">
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="add_food_delivery">Add a food delivery site</option>
+              <option value="add_shopping">Add a shopping site</option>
+              <option value="bug">Report a bug</option>
+              <option value="feature">Feature request</option>
+              <option value="general">General feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="suggestion">Your suggestion</label>
+            <textarea
+              id="suggestion"
+              name="suggestion"
+              rows="4"
+              placeholder="e.g. &quot;Please add instacart.com&quot; or &quot;The overlay doesn't show on mobile checkout&quot;"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="optional">(optional, if you'd like a reply)</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+            >
+          </div>
+
+          <button type="submit">Send Suggestion</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Questions? <a href="mailto:impulseshield@gmail.com">impulseshield@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
